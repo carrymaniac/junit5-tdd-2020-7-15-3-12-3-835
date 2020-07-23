@@ -12,5 +12,6 @@ public class FizzBuzzTest {
         FizzBuzz fizzbuzz = new FizzBuzz();
         String actual = fizzbuzz.play(number);
         assertEquals(String.valueOf(number),actual);
+
     }
 }
