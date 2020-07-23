@@ -38,4 +38,12 @@ public class FizzBuzzTest {
         String actual = fizzbuzz.play(number);
         assertEquals("Whizz",actual);
     }
+
+    @Test
+    void should_return_FizzBuzz_when_FizzBuzz_play_given_15() {
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        int number = 15;
+        String actual = fizzbuzz.play(number);
+        assertEquals("FizzBuzz",actual);
+    }
 }
