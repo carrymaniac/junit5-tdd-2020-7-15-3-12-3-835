@@ -3,7 +3,9 @@ package junit5.tdd;
 public class FizzBuzz {
 
     String play(int number) {
-        if (number % 3 == 0 && number % 5 == 0) {
+        if (number % 3 == 0 && number % 5 == 0 && number % 7 == 0) {
+            return "FizzBuzzWhizz";
+        } else if (number % 3 == 0 && number % 5 == 0) {
             return "FizzBuzz";
         } else if (number % 3 == 0 && number % 7 == 0) {
             return "FizzWhizz";
@@ -15,8 +17,12 @@ public class FizzBuzz {
             return "Buzz";
         } else if (number % 7 == 0) {
             return "Whizz";
-        }else {
+        } else {
             return String.valueOf(number);
         }
+    }
+
+    String playAll(Integer number){
+        return "";
     }
 }

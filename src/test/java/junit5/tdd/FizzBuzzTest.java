@@ -71,5 +71,27 @@ public class FizzBuzzTest {
         assertEquals("FizzBuzzWhizz",actual);
     }
 
+    @Test
+    void should_return_all_result_when_FizzBuzz_playAll_given_15() {
+        String expected = "1\n" +
+                "2\n" +
+                "Fizz\n" +
+                "4\n" +
+                "Buzz\n" +
+                "Fizz\n" +
+                "Whizz\n" +
+                "8\n" +
+                "Fizz\n" +
+                "Buzz\n" +
+                "11\n" +
+                "Fizz \n" +
+                "13\n" +
+                "Whizz\n" +
+                "FizzBuzz";
+        Integer number = 15;
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        String actual = fizzbuzz.playAll(number);
+        assertEquals(expected,actual);
+    }
 
 }
