@@ -12,6 +12,14 @@ public class FizzBuzzTest {
         FizzBuzz fizzbuzz = new FizzBuzz();
         String actual = fizzbuzz.play(number);
         assertEquals(String.valueOf(number),actual);
+    }
 
+
+    @Test
+    public void should_return_Fizz_when_FizzBuzz_play_given_3(){
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        int number = 3;
+        String actual = fizzbuzz.play(number);
+        assertEquals("Fizz",actual);
     }
 }
