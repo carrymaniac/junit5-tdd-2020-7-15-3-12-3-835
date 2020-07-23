@@ -84,7 +84,7 @@ public class FizzBuzzTest {
                 "Fizz\n" +
                 "Buzz\n" +
                 "11\n" +
-                "Fizz \n" +
+                "Fizz\n" +
                 "13\n" +
                 "Whizz\n" +
                 "FizzBuzz";

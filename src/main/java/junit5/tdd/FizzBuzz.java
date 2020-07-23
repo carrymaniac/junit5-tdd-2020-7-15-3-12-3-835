@@ -23,6 +23,12 @@ public class FizzBuzz {
     }
 
     String playAll(Integer number){
-        return "";
+        StringBuilder sb = new StringBuilder();
+        for(int i = 1;i<=number;i++){
+            sb.append(play(i));
+            sb.append("\n");
+        }
+        sb.deleteCharAt(sb.length()-1);
+        return sb.toString();
     }
 }
